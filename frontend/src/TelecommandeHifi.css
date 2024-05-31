@@ -1,0 +1,57 @@
+.remote-buttons button {
+  display: block;
+  border-radius: 100%; 
+  border: none;
+  outline: none;
+  margin: 32px;
+  padding: 19px; /* Réduit la taille du padding de 10% */
+
+  box-shadow: 3px 3px 7px #333;
+}
+
+.remote-buttons button:active {
+	box-shadow: none;
+}
+
+svg {
+  fill: white;
+  width: 57.6px; /* Réduit la largeur et la hauteur de l'icône de 10% */
+  height: 57.6px;
+}
+section {
+	display: inline-block;
+}
+
+.remote-buttons {
+	position: relative;
+}
+
+.remote-buttons .vol-section:after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #517e8b;
+	width: 4px;
+	height: 65%;
+	box-shadow: 2px 2px 7px #333;
+	/* border-radius: 25px; */
+}
+
+.remote {
+	display: inline-block;
+	padding: 32px 0;
+}
+
+.power {
+	background-color: #ff1538;
+}
+
+.source {
+	background-color: #ff8f01;
+}
+
+.vol-down, .vol-up{
+	background-color: #03a9f4;
+}
